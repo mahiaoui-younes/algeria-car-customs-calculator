@@ -1,0 +1,2 @@
+# بعد قبولك في Google AdSense استبدل هذا السطر بالسطر الذي تعطيك إياه Google، مثال:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

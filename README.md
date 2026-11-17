@@ -1,6 +1,12 @@
 # حاسبة جمركة السيارات - الجزائر
 
-موقع ثابت (HTML + CSS + JS) بدون سيرفر، جاهز للنشر مجاناً على Netlify.
+موقع ثابت (HTML + CSS + JS) بدون سيرفر.
+
+**الرابط المباشر (GitHub Pages):** https://mahiaoui-younes.github.io/algeria-car-customs-calculator/
+
+كل `git push` إلى الفرع `main` يحدّث الموقع تلقائياً خلال دقيقة تقريباً.
+
+> إذا نقلت الموقع لاحقاً إلى Netlify أو دومين خاص، غيّر الرابط في canonical و og:url داخل ملفات HTML وفي `sitemap.xml` و `robots.txt`.
 
 ## النشر على Netlify (مجاناً)
 

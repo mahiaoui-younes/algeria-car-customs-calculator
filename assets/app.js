@@ -50,6 +50,8 @@ const FUEL = {
   diesel: { label: 'ديزل', icon: 'i-drop' },
 };
 
+// رابط الموقع الحالي (يعمل على GitHub Pages و Netlify)
+const SITE_URL = location.origin + location.pathname.replace(/[^/]*$/, '');
 const $ = (id) => document.getElementById(id);
 const form = () => $('calcForm');
 const nf = new Intl.NumberFormat('fr-DZ', { maximumFractionDigits: 0 });
@@ -264,7 +266,7 @@ function calculate() {
     'السعر: ' + nf2.format(price) + ' ' + cur + ' | ' + FUEL[fuel].label + (cc && fuel !== 'electric' ? ' ' + cc + ' سم³' : '') + '\n' +
     'الجمركة: ' + fmtM(r.taxes) + ' مليون سنتيم\n' +
     'التكلفة الإجمالية: ' + fmtM(total) + ' مليون سنتيم\n' +
-    'احسب جمركة سيارتك مجاناً: ' + location.origin + '/';
+    'احسب جمركة سيارتك مجاناً: ' + SITE_URL;
 }
 
 /* ---------- الأمثلة ---------- */
@@ -331,7 +333,7 @@ function shareWhatsApp() {
 }
 
 function shareFacebook() {
-  window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.origin + '/'), '_blank', 'noopener');
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SITE_URL), '_blank', 'noopener');
 }
 
 async function copyResult() {
